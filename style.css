@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    user-select: none;
+}
+
+header nav {
+    padding-right: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .section-flexbox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7em;
+}
+
+main .section-flexbox h2{
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+main .section-flexbox .container-flexbox{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+main .section-flexbox .container-flexbox figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-flexbox .container-flexbox figure .objeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(196, 196, 196);
+}
+
+main .section-grid1{
+    margin-top: 10em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-grid1 h2{
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+main .section-grid1 .container-grid1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px;
+    gap: 1.5em;
+}
+
+main .section-grid1 .container-grid1 .video-principal{
+    background-color:  rgb(196, 196, 196);
+    grid-area: 1 / 1 / 15 / 2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-grid1 .container-grid1 .videos-secundarios{
+    background-color: rgb(196, 196, 196);
+    grid-area: 1 / 2 / 15 / 2 ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+main .section-grid1 .container-grid1 .videos-secundarios .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+main .section-grid2{
+    margin-top: 10em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section-grid2 h2{
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+main .section-grid2 .container-grid2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+main .section-grid2 .container-grid2 .imagem-grande{
+    grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+}
+
+main .section-grid2 .container-grid2 .imagem-grande .objeto{
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+main .section-grid2 .container-grid2 .imagem{
+    align-self: baseline;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+main .section-grid2 .container-grid2 .imagem .objeto{
+    background-color: rgb(196, 196, 196);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
